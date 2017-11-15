@@ -15,12 +15,17 @@
   	}
 
     function index(){
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $this->m_balepustaka->delete_all_tmp();
       $data['head_peminjaman'] = $this->m_balepustaka->get_data('head_peminjaman')->result();
   		$this->template->display('v_peminjaman/v_tampil_peminjaman',$data);
   	}
 
     function view_detail($kode){
+      
       $where = array('kode_peminjaman'=>$kode);
       $data['head_peminjaman']= $this->m_balepustaka->get_where_data($where,'head_peminjaman')->result();
       $data['detail_buku']=$this->m_balepustaka->detail_pinjam($kode,'buku','buku.kode_buku=detail_peminjaman.kode_buku')->result();

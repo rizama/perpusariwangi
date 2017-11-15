@@ -14,7 +14,11 @@ class C_mt extends CI_Controller{
     }
 
     function index(){
-  		$this->template->display('v_mt/v_mt');
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
+  		$this->template->display('v_mt/v_mt',$data);
   	}
 
     function buku_baru(){

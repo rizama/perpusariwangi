@@ -41,7 +41,7 @@ class C_login extends CI_Controller {
 				'status'=> $level,
 				'kode'=> $kode
 			));
-			redirect(base_url("index.php/c_home"));
+			redirect(base_url("c_home"));
 			
 		}else {
 
@@ -54,6 +54,6 @@ class C_login extends CI_Controller {
 	function logout()
 	{
 		$this->session->sess_destroy();
-		redirect(base_url('index.php/c_login'));
+		redirect(base_url('c_login'));
 	}
 }

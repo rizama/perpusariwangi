@@ -16,6 +16,10 @@
 
     function index()
     {
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $data['title']="Transaksi Peminjaman";
       $data['tanggalpinjam']=date('Y-m-d');
       $data['tanggalkembali'] = strtotime('+14 day',strtotime($data['tanggalpinjam']));

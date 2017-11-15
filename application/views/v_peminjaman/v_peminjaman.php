@@ -317,7 +317,7 @@
           <div id="tampil_buku"></div>
         </div>
       </div>
-      <div class="dash-unit" style="height:250px; width:560px;">
+      <!-- <div class="dash-unit" style="height:250px; width:560px;">
         <dtitle >Data DVD</dtitle>
         <hr>
         <div class="" style="padding:15px;margin-top:-35px;">
@@ -333,7 +333,7 @@
           </form>
           <div id="tampil_dvd"></div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

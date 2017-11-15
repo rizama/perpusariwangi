@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Bale Pustaka's Home</title>
+    <title>Login Perpustakaan Desa Sariwangi</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>" />
@@ -26,7 +26,7 @@
       <div class="container-fluid">
 
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Pustaka Desa Sariwangi</a>
+          <a class="navbar-brand" href="#">Perpustakaan Desa Sariwangi</a>
         </div>
 
         <form action="<?php echo base_url('index.php/c_login/proses_login'); ?>" class="navbar-form navbar-right" method="post">
@@ -46,11 +46,11 @@
       <div class="site-wrapper-inner">
 
         <div class="inner cover">
-          <h1 class="cover-heading">Pustaka Desa Sariwangi</h1>
-          <p class="lead">Merupakan perpustakaan yang menyediakan ruangan yang nyaman dilengkapi ruangan audio-visual. Memiliki lebih dari 1500 buku dari disiplin ilmu.</p>
-          <p class="lead">
+          <h1 class="cover-heading">Perpustakaan Desa Sariwangi</h1>
+          <p class="lead">Merupakan perpustakaan yang menyediakan ruangan yang nyaman. Memiliki lebih dari 1500 buku dari disiplin ilmu.</p>
+          <!-- <p class="lead">
             <a href="#" class="btn btn-lg btn-default">Pelajari Selanjutnya</a>
-          </p>
+          </p> -->
         </div>
 
         <div class="mastfoot">

@@ -12,7 +12,7 @@ class C_home extends CI_Controller {
 		$this->load->model('m_balepustaka');
 		
 		if($this->session->userdata('login') != 1){
-			redirect(base_url("index.php/c_login"));
+			redirect(base_url("c_login"));
 		}
 	}
 

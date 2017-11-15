@@ -16,10 +16,10 @@
             <label>Email :</label><br>
             <input type="text" name="email" class="form-control" value="<?php echo $a->email ?>"><?php echo form_error('email'); ?>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label>Paroki :</label><br>
             <input type="text" name="paroki" class="form-control" value="<?php echo $a->paroki ?>">
-          </div>
+          </div> -->
           <div class="form-group">
             <label>Telepon :</label><br>
             <input type="text" name="telepon" class="form-control" value="<?php echo $a->telepon ?>"><?php echo form_error('telepon'); ?>

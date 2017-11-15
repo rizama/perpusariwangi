@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url(bg3.jpg);
+  background-image: url(bg2.jpg);
   background-repeat: repeat-y;
 }
 body {
@@ -112,7 +112,8 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  /*padding: 0 0px;*/
+  margin-top: 40px;
 }
 .cover .btn-lg {
   padding: 10px 20px;

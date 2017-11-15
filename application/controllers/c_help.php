@@ -12,7 +12,11 @@
     }
 
     function index(){
-      $this->template->display('v_help');
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
+      $this->template->display('v_help',$data);
     }
   }
 ?>

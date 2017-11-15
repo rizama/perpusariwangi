@@ -27,6 +27,10 @@
 
     function tambah_petugas()
     {
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $kode=$this->m_balepustaka->kode_petugas_otomatis();
       $data = array(
         'kode_petugas' => $kode,
@@ -67,6 +71,10 @@
       $this->form_validation->set_rules('telepon', '', 'required|regex_match[/^[0-9]/]|min_length[10]|max_length[13]');
       $this->form_validation->set_rules('username', '', 'required|max_length[30]|min_length[3]');
       $this->form_validation->set_rules('password', '', 'required|max_length[30]|min_length[3]');
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $data=array(
         'kode_petugas'=> $this->input->post('kode'),
         'nama'=> $this->input->post('nama'),
@@ -80,8 +88,16 @@
       );
       if ($this->form_validation->run() == FALSE) {
         //jika validasi gagal
+        $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
         $this->template->display('v_petugas/v_tambah_petugas',$data);
       } else {
+        $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
         $this->m_balepustaka->insert_data($data,'petugas');
         redirect('c_petugas/index');
       }
@@ -96,6 +112,10 @@
 
     function edit_petugas($kode_petugas)
     {
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $where = array('kode_petugas'=>$kode_petugas);
       $data['petugas']= $this->m_balepustaka->get_where_data($where,'petugas')->result();
       $this->template->display('v_petugas/v_edit_petugas',$data);
@@ -121,6 +141,10 @@
       $this->form_validation->set_rules('username', '', 'required|max_length[30]|min_length[3]');
       $this->form_validation->set_rules('password', '', 'required|max_length[30]|min_length[3]');
       $kode=$this->input->post('kode');
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $data=array(
         'kode_petugas'=> $this->input->post('kode'),
         'nama'=> $this->input->post('nama'),
@@ -143,6 +167,10 @@
     }
 
     function detail_petugas($kode){
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $where = array('kode_petugas'=>$kode);
       $data['petugas']= $this->m_balepustaka->get_where_data($where,'petugas')->result();
       $this->template->display('v_petugas/v_detail_petugas',$data);

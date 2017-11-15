@@ -10,18 +10,26 @@
       $this->load->model('m_balepustaka');
 
       if($this->session->userdata('login') != "TRUE"){
-  			redirect(base_url("index.php/c_login"));
+  			redirect(base_url("c_login"));
   		}
     }
 
     function index()
     {
+      $status = array(
+      'level' => $this->session->userdata('status')
+    );
+     $data['status'] = $status;
       $data['anggota'] = $this->m_balepustaka->get_data('anggota')->result();
   		$this->template->display('v_anggota/v_tampil_anggota',$data);
     }
 
     function tambah_anggota()
     {
+        $status = array(
+        'level' => $this->session->userdata('status')
+       );
+      $data['status'] = $status;
       $kode=$this->m_balepustaka->kode_anggota();
       $data = array('kode_anggota' => $kode,
         'nama'=> '',
@@ -31,7 +39,8 @@
         'telepon'=> '',
         'paroki'=> '',
         'email'=> '',
-        'image'=> ''
+        'image'=> '',
+        'status'=> $status
       );
       $this->template->display('v_anggota/v_tambah_anggota',$data);
     }
@@ -86,6 +95,10 @@
 
     function edit_anggota($kode_anggota)
     {
+      $status = array(
+      'level' => $this->session->userdata('status')
+    );
+     $data['status'] = $status;
       $where = array('kode_anggota'=>$kode_anggota);
       $data['anggota']= $this->m_balepustaka->get_where_data($where,'anggota')->result();
       $this->template->display('v_anggota/v_edit_anggota',$data);
@@ -138,12 +151,20 @@
     }
 
     function detail_anggota($kode){
+      $status = array(
+      'level' => $this->session->userdata('status')
+    );
+     $data['status'] = $status;
       $where = array('kode_anggota'=>$kode);
       $data['anggota']= $this->m_balepustaka->get_where_data($where,'anggota')->result();
       $this->template->display('v_anggota/v_detail_anggota',$data);
     }
 
     function cetak_anggota(){
+      $status = array(
+      'level' => $this->session->userdata('status')
+    );
+     $data['status'] = $status;
       $data['anggota'] = $this->m_balepustaka->get_data('anggota')->result();
       $this->load->view('v_anggota/v_cetak_anggota',$data);
     }

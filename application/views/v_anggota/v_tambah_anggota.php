@@ -44,12 +44,13 @@
             <input type="text" name="tanggal_lahir" id="datepicker" class="form-control" value="<?php echo $tanggal_lahir; ?>"><?php echo form_error('tanggal_lahir'); ?>
           </div>
         </div>
-        <div class="col-sm-3">
+        <!-- <div class="col-sm-3">
           <div class="form-group">
             <label>Paroki :</label><br>
-            <input type="text" name="paroki" class="form-control">
+            <input type="text" name="paroki" class="form-control" value="-">
           </div>
-        </div>
+        </div> -->
+        <input type="hidden" name="paroki" class="form-control" value="-">
 
         <div class="col-sm-3">
           <div class="form-group">

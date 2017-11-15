@@ -8,19 +8,20 @@
   }
   </style>
   <div class="logo">
-    <a href="<?php echo base_url("index.php/c_home") ?>">
-      <h1 style="font-family:Patua One">Pustaka Desa Sariwangi</h1>
+    <img src="<?php echo base_url();?>assets/images/kbb.png" alt="Smiley face" height="42" width="42">
+    <a href="<?php echo base_url("c_home") ?>">
+      <!-- <h1 style="font-family:Patua One">Pustaka Desa Sariwangi</h1> -->
       <span>AdminPanel</span>
     </a>
   </div>
   <ul>
     <li>
-      <a href="<?php echo base_url("index.php/c_home") ?>">
+      <a href="<?php echo base_url("c_home") ?>">
         <i class="icon-dashboard icon-large"></i> Dashboard
       </a>
     </li>
     <li>
-      <a href="<?php echo base_url("index.php/c_buku/") ?>">
+      <a href="<?php echo base_url("c_buku/") ?>">
         <i class="icon-book icon-large" style="font-size:28px"></i> Buku
       </a>
     </li>
@@ -31,34 +32,34 @@
     </li> -->
     <?php if ($status['level'] == "admin"): ?>
       <li>
-      <a href="<?php echo base_url("index.php/c_petugas/") ?>">
+      <a href="<?php echo base_url("c_petugas/") ?>">
         <i class="icon-user icon-large"></i> Petugas
       </a>
     </li>
     <?php endif ?>
-    <!-- <li>
-      <a href="<?php echo base_url("index.php/c_anggota/") ?>">
+    <li>
+      <a href="<?php echo base_url("c_anggota/") ?>">
         <i class="icon-group icon-large" style="font-size:27px"></i> Anggota
       </a>
     </li>
     <li>
-      <a href="<?php echo base_url("index.php/c_tampil_peminjaman/") ?>">
+      <a href="<?php echo base_url("c_tampil_peminjaman/") ?>">
         <i class="icon-edit icon-large"></i> Transaksi
       </a>
     </li>
-    <li>
-      <a href="<?php echo base_url("index.php/c_mt/") ?>">
+    <!-- <li>
+      <a href="<?php echo base_url("c_mt/") ?>">
         <i class="icon-bar-chart icon-large"></i> Other
       </a>
-    </li>
+    </li> -->
     <li style="border-right: 2px solid #262626;">
-      <a href="<?php echo base_url("index.php/c_help/") ?>">
+      <a href="<?php echo base_url("c_help/") ?>">
         <i class="icon-sitemap icon-large"></i> Help
       </a>
-    </li> -->
+    </li>
     <div class="header-right">
       <li style="border-left: 2px solid #262626;">
-        <a href="<?php echo base_url("index.php/c_login/logout") ?>">
+        <a href="<?php echo base_url("c_login/logout") ?>">
           <i class="icon-signout icon-large"></i> Logout
         </a>
       </li>

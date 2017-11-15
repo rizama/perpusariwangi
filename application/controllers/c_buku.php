@@ -88,6 +88,10 @@
 
     function edit_buku($kode_buku)
     {
+      $status = array(
+        'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $where = array('kode_buku'=>$kode_buku);
       $data['buku']= $this->m_balepustaka->get_where_data($where,'buku')->result();
       $this->template->display('v_buku/v_edit_buku',$data);
@@ -95,6 +99,7 @@
 
     function p_edit_buku()
     {
+
       $data=array(
         'kode_buku'=> $this->input->post('kode'),
         'judul_buku'=> $this->input->post('judul'),

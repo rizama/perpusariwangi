@@ -15,7 +15,7 @@
           <th>JK</th>
           <th>Alamat</th>
           <th>Telepon</th>
-          <th>Paroki</th>
+          <!-- <th>Paroki</th> -->
           <th>Email</th>
           <th>Action</th>
         </tr>
@@ -31,7 +31,7 @@
             <td><?php echo $a->jenis_kelamin ?></td>
             <td><?php echo $a->alamat ?></td>
             <td><?php echo $a->telepon ?></td>
-            <td><?php echo $a->paroki ?></td>
+            <!-- <td><?php echo $a->paroki ?></td> -->
             <td><?php echo $a->email ?></td>
             <td style="text-align: center"><a href="<?php echo base_url("index.php/c_anggota/detail_anggota/$a->kode_anggota") ?>" data-toggle="tooltip" title="Detail"><span class="glyphicon glyphicon-eye-open"></span></a>&nbsp
             <a href="<?php echo base_url("index.php/c_anggota/edit_anggota/$a->kode_anggota") ?>" data-toggle="tooltip" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>&nbsp

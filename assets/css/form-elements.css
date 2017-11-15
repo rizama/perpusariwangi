@@ -88,7 +88,7 @@ select.form-control {
     padding: 0 12px;
     vertical-align: middle;
     background: #fff;
-    background: rgba(255, 255, 255, 0.6);
+    /*background: rgba(255, 255, 255, 0.6);*/
     border: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
