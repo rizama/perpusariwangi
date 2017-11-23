@@ -32,13 +32,13 @@
         <br>
         <br>
 
-        <form action = "<?php echo base_url(). 'index.php/c_mt/dvd_baru'; ?>" method="post">
+        <!-- <form action = "<?php echo base_url(). 'index.php/c_mt/dvd_baru'; ?>" method="post">
           <div class="form-group">
             <label>DVD Baru Pada Bulan</label><br>
             <input type="text" class="date-picker-mt" style="width:343px" name="dvd_baru" class="form-control">
             <button type="submit" class="btn" style="float:right;">Submit</button>
           </div>
-        </form>
+        </form> -->
 
       </div>
     </div>
@@ -49,16 +49,13 @@
       <dtitle>Laporan Bulanan</dtitle>
       <hr>
       <div style="margin-top:-15px;padding:10px">
-      <form action = "<?php echo base_url(). 'index.php/c_mt/dvd_terbanyak'; ?>" method="post">
+      <!-- <form action = "<?php echo base_url(). 'index.php/c_mt/dvd_terbanyak'; ?>" method="post">
         <div class="form-group">
           <label>Peminjaman DVD Terbanyak</label><br>
           <input type="text" class="date-picker-mt" style="width:358px" name="dvd_terbanyak" class="form-control">
           <button type="submit" class="btn" style="float:right;">Submit</button>
         </div>
-      </form>
-      <br>
-      <br>
-      <br>
+      </form> -->
       <form action = "<?php echo base_url(). 'index.php/c_mt/anggota_baru'; ?>" method="post">
         <div class="form-group">
           <label>Anggota Baru Pada Bulan</label><br>

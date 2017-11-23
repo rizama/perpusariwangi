@@ -47,11 +47,11 @@
         <i class="icon-edit icon-large"></i> Transaksi
       </a>
     </li>
-    <!-- <li>
+    <li>
       <a href="<?php echo base_url("c_mt/") ?>">
         <i class="icon-bar-chart icon-large"></i> Other
       </a>
-    </li> -->
+    </li>
     <li style="border-right: 2px solid #262626;">
       <a href="<?php echo base_url("c_help/") ?>">
         <i class="icon-sitemap icon-large"></i> Help

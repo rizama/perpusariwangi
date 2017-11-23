@@ -287,7 +287,7 @@
                 <label class="control-label col-sm-4">Alamat</label>
                 <label class="control-label col-sm-1" style="text-align:right">:</label>
                 <div class="col-sm-7">
-                  <textarea name="alamat" id="alamat" class="form-control" style="height:120px"></textarea>
+                  <textarea name="alamat" id="alamat" class="form-control" style="height:120px;resize:none"></textarea>
                 </div>
               </div>
 
@@ -344,8 +344,8 @@
   <div class="modal-content">
     <div class="modal-header">
       <center>
-      <h4>Bale Pustaka</h4>
-      <p style="line-height:1px;">Jl. Jawa No 6 Bandung - 022652349</p>
+      <h4>Perpustakaan Sariwangi</h4>
+      <p style="line-height:1px;">Jl. Sariwangi No 118 Bandung - 022652349</p>
     </center>
     </div>
     <div class="modal-body">

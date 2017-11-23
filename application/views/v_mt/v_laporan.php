@@ -11,7 +11,7 @@ class PDF extends FPDF
     $this->Ln(12);
     $this->setFont('Times','B',14);
     $this->setFillColor(255,255,255);
-    $this->cell(297,6,'LAPORAN TRANSAKSI BALE PUSTAKA',0,1,'C',10);
+    $this->cell(297,6,'LAPORAN TRANSAKSI PERPUSTAKAAN DESA SARIWANGI',0,1,'C',10);
     $this->setFont('Times','',12);
     $this->cell(297,6,'Jl. Jawa No 6 Bandung - 0224233287',0,1,'C',1);
 	}

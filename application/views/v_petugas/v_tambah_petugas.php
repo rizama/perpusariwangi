@@ -37,7 +37,7 @@
       <div class="col-sm-6">
         <div class="form-group">
           <label style="float:center">Alamat :</label><br>
-          <textarea name="alamat" class="form-control" style="height:120px"><?php echo $alamat; ?></textarea><?php echo form_error('alamat'); ?>
+          <textarea name="alamat" class="form-control" style="height:120px;resize:none"><?php echo $alamat; ?></textarea><?php echo form_error('alamat'); ?>
         </div>
       </div>
       <div class="col-sm-3">

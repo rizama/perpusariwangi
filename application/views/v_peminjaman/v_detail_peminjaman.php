@@ -95,7 +95,7 @@
                   </table>
                 </td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td style="width: 100px;">DVD</td>
                 <td style="width: 1px;">:</td>
                 <td>
@@ -112,7 +112,7 @@
 
                   <?php $nodvd=$nodvd+1; } ?>
                 </td>
-              </tr>
+              </tr> -->
               <tr>
                 <td><td><td>
               </tr>

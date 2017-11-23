@@ -1,6 +1,6 @@
 <div class="container" >
   <div class="page-header">
-    <a href="<?php echo base_url("index.php/c_peminjaman") ?>" data-toggle="tooltip" title="Tambah Transaksi" class="btn-lg navbar-right" style="padding-right:15px"><span class="glyphicon glyphicon-plus" style="font-size:30px"></span></a>
+    <a href="<?php echo base_url("index.php/c_peminjaman") ?>" data-toggle="tooltip" title="Tambah Transaksi" class="btn-lg navbar-right" style="padding-right:30px;padding-top:17px"><span class="glyphicon glyphicon-plus" style="font-size:30px"></span></a>
     <h1>Daftar Peminjaman</h1>
   </div>
 
@@ -11,6 +11,7 @@
           <th>No</th>
           <th>Kode Peminjaman</th>
           <th>Kode Anggota</th>
+          <!-- <th>Nama Anggota</th> -->
           <th>Tanggal Pinjam</th>
           <th>Tanggal Kembali</th>
           <th>Keterangan</th>
@@ -27,6 +28,7 @@
           <td><?php echo $no ?></td>
           <td><?php echo $h->kode_peminjaman ?></td>
           <td><?php echo $h->kode_anggota ?></td>
+          <!-- <td><?php echo $h->nama_anggota ?></td> -->
           <td><?php echo $h->tanggal ?></td>
           <td><?php echo $h->tanggal_kembali ?></td>
           <td><?php echo $h->keterangan ?></td>

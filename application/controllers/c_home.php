@@ -10,7 +10,7 @@ class C_home extends CI_Controller {
 		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->model('m_balepustaka');
-		
+
 		if($this->session->userdata('login') != 1){
 			redirect(base_url("c_login"));
 		}
@@ -21,14 +21,15 @@ class C_home extends CI_Controller {
 			'level' => $this->session->userdata('status')
 		);
 	   $data['status'] = $status;
-		
+
 	   $where = array(
 	    	'kode_petugas'=>$this->session->userdata('kode')
 	    );
 	   $data['petugas']= $this->m_balepustaka->get_where_data($where,'petugas')->result();
-	   $data['buku']=$this->m_balepustaka->qry("select * from buku order by tanggal desc limit 5");
+     $data['buku']=$this->m_balepustaka->qry("select * from buku order by tanggal desc limit 5");
+	   $data['anggota']=$this->m_balepustaka->qry("select * from anggota order by tanggal_daftar desc limit 5");
 	   $data['dvd']=$this->m_balepustaka->qry("select * from dvd order by tanggal desc limit 5");
-			$this->template->display('v_home',$data);
+		$this->template->display('v_home',$data);
 	}
 
   function time(){

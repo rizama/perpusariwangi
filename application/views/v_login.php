@@ -22,11 +22,11 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="background-color: #354052">
       <div class="container-fluid">
 
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Perpustakaan Desa Sariwangi</a>
+          <a class="navbar-brand" href="#" style="color: #fff">Perpustakaan Desa Sariwangi</a>
         </div>
 
         <form action="<?php echo base_url('index.php/c_login/proses_login'); ?>" class="navbar-form navbar-right" method="post">
@@ -36,7 +36,7 @@
           <div class="form-group">
             <input type="password" name="password" placeholder="Password" class="form-control" required>
           </div>
-          <button type="submit" class="btn btn-link"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+          <button type="submit" class="btn btn-link" style="color: #fff"><span class="glyphicon glyphicon-log-in"></span> Login</button>
         </form>
 
       </div>

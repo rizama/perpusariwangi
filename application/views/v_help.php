@@ -88,7 +88,8 @@
   </div>
 
   <div class="col-lg-6" style="padding-right:0px;">
-    <div class="dash-unit" style="height:390px">
+    <div class="dash-unit">
+      <!-- style="height:390px" -->
       <dtitle>Peminjaman</dtitle>
       <hr>
       <ul style="padding-right:10px">
@@ -107,21 +108,21 @@
         <li>
           Peminjaman buku dibatasi 3 item pada setiap transaksi.
         </li>
-        <li>
+        <!-- <li>
           Data buku dapat dikosongkan, jika anggota hanya akan meminjam dvd.
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           Pilih DVD yang akan dipinjam, dengan memilih kode DVD, lalu tekan tombol tambah.
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           DVD yang sudah ditambah dapat dihapus, dengan menekan tombol hapus yang berada disamping judul.
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           Peminjaman DVD dibatasi 2 item pada setiap transaksi.
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           Data DVD dapat dikosongkan, jika anggota hanya akan meminjam DVD.
-        </li>
+        </li> -->
         <li>
           Jika Data sudah terisi, tekan tombol simpan.
         </li>
@@ -149,10 +150,10 @@
           Pada Menu Transaksi, tekan tombol perpanjangan yang berada di kolom action.
         </li>
         <li>
-          Jika Buku atau DVD yang dipinjam akan diperpanjang semua, langsung tekan Perpanjang.
+          Buku yang dipinjam akan diperpanjang semua, langsung tekan Perpanjang.
         </li>
         <li>
-          Jika Buku atau DVD yang dipinjam akan diperpanjang sebagian, item bisa ditambahkan atau dikurangi.
+          Jika Buku yang dipinjam akan diperpanjang sebagian, item bisa ditambahkan atau dikurangi.
         </li>
         <li>
           Setelah selesai tekan tombol Perpanjang.

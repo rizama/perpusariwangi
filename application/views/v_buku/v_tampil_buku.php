@@ -2,8 +2,8 @@
 <!-- Content -->
 <div class="container" >
   <div class="page-header">
-    <a href="<?php echo base_url("index.php/c_buku/tambah_buku") ?>" data-toggle="tooltip" title="Tambah Buku" class="btn-lg navbar-right" style="padding-right:15px"><span class="glyphicon glyphicon-plus" style="font-size:30px"></span></a>
-    <a href="<?php echo base_url("index.php/c_buku/cetak_buku") ?>" data-toggle="tooltip" title="Cetak" class="btn-lg navbar-right" style="padding-right:10px;padding-top:8px;"><span class="icon-print" style="font-size:32px"></span></a>
+    <a href="<?php echo base_url("index.php/c_buku/tambah_buku") ?>" data-toggle="tooltip" title="Tambah Buku" class="btn-lg navbar-right" style="padding-right:30px;padding-top:17px;"><span class="glyphicon glyphicon-plus" style="font-size:30px"></span></a>
+    <a href="<?php echo base_url("index.php/c_buku/cetak_buku") ?>" data-toggle="tooltip" title="Cetak" class="btn-lg navbar-right" style="padding-right:20px;padding-top:15px;"><span class="icon-print" style="font-size:32px"></span></a>
     <h1>Daftar Buku</h1>
   </div>
 

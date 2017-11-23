@@ -2,7 +2,7 @@
 <!-- Content -->
 <div class="container" >
   <div class="page-header">
-    <a href="<?php echo base_url("index.php/c_petugas/tambah_petugas") ?>" data-toggle="tooltip" title="Tambah Petugas" class="btn-lg navbar-right" style="padding-right:15px"><span class="glyphicon glyphicon-plus" style="font-size:30px"></span></a>
+    <a href="<?php echo base_url("index.php/c_petugas/tambah_petugas") ?>" data-toggle="tooltip" title="Tambah Petugas" class="btn-lg navbar-right" style="padding-right:30px;padding-top:17px"><span class="glyphicon glyphicon-plus" style="font-size:30px"></span></a>
     <h1>Daftar Petugas</h1>
   </div>
 

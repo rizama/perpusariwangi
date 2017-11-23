@@ -20,8 +20,8 @@
       $status = array(
       'level' => $this->session->userdata('status')
       );
-      $data['petugas'] = $this->m_balepustaka->get_data("petugas where status !='admin'")->result();
       $data['status'] = $status;
+      $data['petugas'] = $this->m_balepustaka->get_data("petugas where status !='admin'")->result();
   		$this->template->display('v_petugas/v_tampil_petugas',$data);
     }
 
@@ -71,6 +71,7 @@
       $this->form_validation->set_rules('telepon', '', 'required|regex_match[/^[0-9]/]|min_length[10]|max_length[13]');
       $this->form_validation->set_rules('username', '', 'required|max_length[30]|min_length[3]');
       $this->form_validation->set_rules('password', '', 'required|max_length[30]|min_length[3]');
+      $kode=$this->input->post('kode');
       $status = array(
         'level' => $this->session->userdata('status')
       );
@@ -94,10 +95,6 @@
       $data['status'] = $status;
         $this->template->display('v_petugas/v_tambah_petugas',$data);
       } else {
-        $status = array(
-        'level' => $this->session->userdata('status')
-      );
-      $data['status'] = $status;
         $this->m_balepustaka->insert_data($data,'petugas');
         redirect('c_petugas/index');
       }

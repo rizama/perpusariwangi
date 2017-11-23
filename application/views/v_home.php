@@ -53,9 +53,9 @@
             <dtitle> New Member</dtitle>
             <hr>
             <ul>
-              <?php //foreach ($dvd as $d) { ?>
-              <li><?php //echo $d['kode_dvd'].'&nbsp-&nbsp'.$d['judul_dvd'];?></li>
-              <?php //} ?>
+              <?php foreach ($anggota as $member) { ?>
+              <li><?php echo $member['kode_anggota'].'&nbsp-&nbsp'.$member['nama'];?></li>
+              <?php } ?>
             </ul>
           </div>
         </div>

@@ -21,11 +21,42 @@
       $data['status'] = $status;
       $this->m_balepustaka->delete_all_tmp();
       $data['head_peminjaman'] = $this->m_balepustaka->get_data('head_peminjaman')->result();
+      // $banyak = count($data['head_peminjaman']);
+      // $table = 'anggota';
+      // $dataAnggota = 'nama';
+      // $where = array();
+      // // $nama = array();
+      // echo '<pre>';
+      // // for ($i = 0; $i < $banyak; $i++) {
+      // //   $dataAnggota[] = $data['head_peminjaman'][$i]->kode_anggota;
+      // //   // echo print_r($data['head_peminjaman'][$i]->kode_anggota);
+      // // }
+      // // foreach ($dataAnggota as $key) {
+      // //   echo $key;
+      // //   echo "<br>";
+      // // }
+      // echo '</pre>';
+      //
+      // for ($i = 0; $i < $banyak; $i++) {
+      //   $where[$i] = $data['head_peminjaman'][$i]->kode_anggota;
+      // }
+      // for ($i = 0; $i < $banyak; $i++) {
+      //   $nama[] = $this->m_balepustaka->select_where_data($where[$i],$dataAnggota,$table)->result();
+      // }
+      // echo '<pre>';
+      // foreach ($nama as $key => $value) {
+      //   # code...
+      // }
+      // echo '</pre>';
+      // die();
   		$this->template->display('v_peminjaman/v_tampil_peminjaman',$data);
   	}
 
     function view_detail($kode){
-      
+      $status = array(
+      'level' => $this->session->userdata('status')
+      );
+      $data['status'] = $status;
       $where = array('kode_peminjaman'=>$kode);
       $data['head_peminjaman']= $this->m_balepustaka->get_where_data($where,'head_peminjaman')->result();
       $data['detail_buku']=$this->m_balepustaka->detail_pinjam($kode,'buku','buku.kode_buku=detail_peminjaman.kode_buku')->result();

@@ -11,7 +11,7 @@ class V_cetak_dvd extends FPDF
     $this->Ln(12);
     $this->setFont('Times','B',14);
     $this->setFillColor(255,255,255);
-    $this->cell(200,6,'KOLEKSI DVD BALE PUSTAKA',0,1,'C',10);
+    $this->cell(200,6,'KOLEKSI DVD PERPUSTAKAAN DESA SARIWANGI',0,1,'C',10);
     $this->setFont('Times','',12);
     $this->cell(200,6,"Bulan : ".date('F Y'),0,1,'C',1);
     $this->cell(200,6,'Jl. Jawa No 6 Bandung - 0224233287',0,1,'C',1);
