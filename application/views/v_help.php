@@ -1,6 +1,6 @@
 <div class="container">
   <div class="page-header">
-    <h1>Help</h1>
+    <h1>Panduan</h1>
   </div>
 
   <div class="col-lg-6" style="padding-left:0px">

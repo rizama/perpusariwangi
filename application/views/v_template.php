@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="<?php echo base_url("assets/css/dataTables.responsive.css"); ?>" />
     <link rel="stylesheet" href="<?php echo base_url("assets/css/dataTables.bootstrap.css"); ?>" />
     <link rel="stylesheet" href="<?php echo base_url("assets/css/select2.css"); ?>" />
+    <link rel="icon" href="<?php echo base_url("assets/images/kbb.png") ?>" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/line-awesome.css"); ?>">
+
 
     <script type="text/javascript" src="<?php echo base_url("assets/js/jquery.min.js"); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/jquery.dataTables.min.js"); ?>"></script>

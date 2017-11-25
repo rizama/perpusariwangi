@@ -254,7 +254,7 @@ h5 {
   font-size: 11px;
   opacity: .9;
   color: #ffffff;
-  padding-top: 15px;
+  padding-top: 8px;
   display: block;
 
 }
@@ -1059,4 +1059,8 @@ ul.icons li .icon-large:before {
 
 .form-control{
   border: 1px solid;
+}
+
+.la {
+  color: rgb(167, 164, 164);
 }

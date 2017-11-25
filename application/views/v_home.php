@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-3 col-lg-12">
       <div class="dash-unit" style="height:350px;">
-        <dtitle>User Profile</dtitle>
+        <dtitle>Profil Pengguna</dtitle>
         <hr>
         <?php foreach ($petugas as $p) { ?>
         <center>
@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-sm-3 col-lg-4">
           <div class="dash-unit" style="height:200px">
-            <dtitle>Local Time</dtitle>
+            <dtitle>Waktu Lokal</dtitle>
             <hr>
             <div id="time" style="font-family:digital-7; font-size:60px;text-align:center;">
               <h1> </h1>
@@ -39,7 +39,7 @@
 
         <div class="col-sm-3 col-lg-4">
           <div class="dash-unit" style="height:200px">
-            <dtitle> New Books</dtitle>
+            <dtitle> List Buku Terbaru </dtitle>
             <hr>
             <ul>
               <?php foreach ($buku as $b) { ?>
@@ -50,7 +50,7 @@
         </div>
         <div class="col-sm-3 col-lg-4">
           <div class="dash-unit" style="height:200px">
-            <dtitle> New Member</dtitle>
+            <dtitle> Anggota Terbaru </dtitle>
             <hr>
             <ul>
               <?php foreach ($anggota as $member) { ?>

@@ -17,12 +17,12 @@
   <ul>
     <li>
       <a href="<?php echo base_url("c_home") ?>">
-        <i class="icon-dashboard icon-large"></i> Dashboard
+        <i class="la la-home" style="font-size: 35px;"></i></br> Dasbor
       </a>
     </li>
     <li>
       <a href="<?php echo base_url("c_buku/") ?>">
-        <i class="icon-book icon-large" style="font-size:28px"></i> Buku
+        <i class="la la-book" style="font-size: 35px;"></i></i></br> Buku
       </a>
     </li>
     <!-- <li>
@@ -33,34 +33,34 @@
     <?php if ($status['level'] == "admin"): ?>
       <li>
       <a href="<?php echo base_url("c_petugas/") ?>">
-        <i class="icon-user icon-large"></i> Petugas
+        <i class="la la-user" style="font-size: 35px;"></i></i></br> Petugas
       </a>
     </li>
     <?php endif ?>
     <li>
       <a href="<?php echo base_url("c_anggota/") ?>">
-        <i class="icon-group icon-large" style="font-size:27px"></i> Anggota
+        <i class="la la-users" style="font-size: 35px;"></i></i></br> Anggota
       </a>
     </li>
     <li>
       <a href="<?php echo base_url("c_tampil_peminjaman/") ?>">
-        <i class="icon-edit icon-large"></i> Transaksi
+        <i class="la la-pencil-square" style="font-size: 35px;"></i></i></br> Transaksi
       </a>
     </li>
     <li>
       <a href="<?php echo base_url("c_mt/") ?>">
-        <i class="icon-bar-chart icon-large"></i> Other
+        <i class="la la-gear" style="font-size: 35px;"></i></i></br> Lainnya
       </a>
     </li>
     <li style="border-right: 2px solid #262626;">
       <a href="<?php echo base_url("c_help/") ?>">
-        <i class="icon-sitemap icon-large"></i> Help
+        <i class="la la-comment" style="font-size: 35px;"></i></i></br> Panduan
       </a>
     </li>
     <div class="header-right">
       <li style="border-left: 2px solid #262626;">
         <a href="<?php echo base_url("c_login/logout") ?>">
-          <i class="icon-signout icon-large"></i> Logout
+          <i class="la la-sign-out" style="font-size: 35px;"></i></i></br> Keluar
         </a>
       </li>
     </div>
