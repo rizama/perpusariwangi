@@ -16,7 +16,7 @@
           <th>Alamat</th>
           <th>Telepon</th>
           <th>Status</th>
-          <th>Action</th>
+          <th>Aksi</th>
         </tr>
       </thead>
 

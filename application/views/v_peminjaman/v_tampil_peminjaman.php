@@ -15,7 +15,7 @@
           <th>Tanggal Pinjam</th>
           <th>Tanggal Kembali</th>
           <th>Keterangan</th>
-          <th>Action</th>
+          <th>Aksi</th>
         </tr>
       </thead>
 

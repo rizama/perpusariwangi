@@ -33,7 +33,7 @@
             ?>
 
             <h1><?php echo $d1 ?></h1>
-            <h3><?php echo $d2 ?></h3>
+            <h3><strong><?php echo $d2 ?></strong></h3>
           </div>
         </div>
 

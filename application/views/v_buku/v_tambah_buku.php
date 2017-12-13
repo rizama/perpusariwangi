@@ -34,7 +34,7 @@
           </div>
           <div class="col-sm-3">
             <div class="form-group">
-              <label>Stock :</label><br>
+              <label>Stok :</label><br>
               <input type="number" min="1" name="stock" class="form-control" value="1"><?php echo form_error('stock'); ?>
             </div>
           </div>
@@ -46,7 +46,7 @@
           </div>
           <div class="col-sm-12">
             <hr>
-            <button type="submit" class="btn" style="float:right">Submit</button>
+            <button type="submit" class="btn" style="float:right">Kirim</button>
           </div>
         </form>
       </div>

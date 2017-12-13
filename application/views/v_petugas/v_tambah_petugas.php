@@ -60,7 +60,7 @@
       </div>
       <div class="col-sm-3">
         <div class="form-group">
-        <label>Image :</label><br>
+        <label>Foto :</label><br>
         <input type="file" name="image" class="form-control" >
         </div>
       </div>
@@ -71,7 +71,7 @@
       <br>
       <br>
       <hr>
-      <button type="submit" class="btn" style="float:right">Submit</button>
+      <button type="submit" class="btn" style="float:right">Kirim</button>
       </div>
 
       </form>

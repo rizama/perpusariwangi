@@ -17,7 +17,7 @@
           <th>Telepon</th>
           <!-- <th>Paroki</th> -->
           <th>Email</th>
-          <th>Action</th>
+          <th>Aksi</th>
         </tr>
       </thead>
 
@@ -34,8 +34,8 @@
             <!-- <td><?php echo $a->paroki ?></td> -->
             <td><?php echo $a->email ?></td>
             <td style="text-align: center"><a href="<?php echo base_url("index.php/c_anggota/detail_anggota/$a->kode_anggota") ?>" data-toggle="tooltip" title="Detail"><span class="glyphicon glyphicon-eye-open"></span></a>&nbsp
-            <a href="<?php echo base_url("index.php/c_anggota/edit_anggota/$a->kode_anggota") ?>" data-toggle="tooltip" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>&nbsp
-            <a href="<?php echo base_url("index.php/c_anggota/hapus_anggota/$a->kode_anggota") ?>" onclick="return confirm('Are you sure delete this data?');" data-toggle="tooltip" title="Delete"><span class="glyphicon glyphicon-trash"></span></a>&nbsp
+            <a href="<?php echo base_url("index.php/c_anggota/edit_anggota/$a->kode_anggota") ?>" data-toggle="tooltip" title="Ubah"><span class="glyphicon glyphicon-edit"></span></a>&nbsp
+            <a href="<?php echo base_url("index.php/c_anggota/hapus_anggota/$a->kode_anggota") ?>" onclick="return confirm('Apakah anda akin ingin menghapus data ini?');" data-toggle="tooltip" title="Hapus"><span class="glyphicon glyphicon-trash"></span></a>&nbsp
             </td>
           </tr>
         <?php
