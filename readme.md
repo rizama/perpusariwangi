@@ -1,4 +1,4 @@
-Aplikasi Pencatatan Transaksi Peminjaman Buku dan DVD di Perpustakaan.
+Aplikasi Pencatatan Transaksi Peminjaman Buku dan DVD di Perpustakaan (Studi Kasus Desa Sariwangi).
 
 
 Cara Installasi : 
